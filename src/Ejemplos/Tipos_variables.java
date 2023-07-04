@@ -13,7 +13,7 @@ public class Tipos_variables {
 		int newentero = (int) decimal;
 		System.out.println(newentero);
 		
-		// Int solo soporta 32 bits, si el dato es demasiado grande se usa long: 64 bits
+		// Int y  float solo soporta 4 bits, si el dato es demasiado grande se usa long o double: 64 bits
 		// Se debe introducir la letra L al final del numero para indicar que es long
 		long numero_1 = 1222222222222222222L;
 		System.out.println(numero_1);
