@@ -4,8 +4,23 @@ package Proyecto_Bytebank;
 public class Cuenta {
 	private double saldo; //private: de esta manera el saldo no se podra modificar externamente, solo desde metodos de este archivo
 	private int agencia;
-	private int numero;
-	Cliente titular; // tipo de dato de titular es Cliente, hace referencia a la clase Cliente
+	private int numero; 
+	private Cliente titular; // tipo de dato de titular es Cliente, hace referencia a la clase Cliente
+	
+	private static int total = 0;
+	
+	public Cuenta(int agencia){ //este constructor inicializa los atributos de esta clase							
+		if (agencia <= 0) {
+			System.out.println("el valor debe ser mayor a cero");
+			this.agencia = 1;
+		}	
+		else {
+			this.agencia = agencia;
+		}
+		total++;
+		System.out.println("Se van creando "+total+" cuentas");
+	}
+	
 	
 	// crear metodos	
 	// void: metodo que no retorna valor, solo ejecuta
