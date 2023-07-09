@@ -5,5 +5,3 @@ public class Ejemplo_string {
 		System.out.println("Hola Mundo!!!");
 	}
 }
-
-
